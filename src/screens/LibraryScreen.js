@@ -14,7 +14,6 @@ import psalmsData from '../data/psalms.json';
 const LibraryScreen = ({ navigation }) => {
   const [highlightedSections, setHighlightedSections] = useState([]);
 
-  // useFocusEffect runs every time the user focuses on this screen
   useFocusEffect(
     useCallback(() => {
       const loadHighlights = async () => {
@@ -25,7 +24,6 @@ const LibraryScreen = ({ navigation }) => {
 
           const groupedByColor = {};
 
-          // Process and group highlights
           storedHighlights.forEach(([key, color]) => {
             const [chapterNum, verseNum] = key.replace('psalm-', '').split(':').map(Number);
             
@@ -40,12 +38,11 @@ const LibraryScreen = ({ navigation }) => {
                 ...verse,
                 chapter: chapterNum,
                 color: color,
-                fullChapter: chapter, // Pass the full chapter object for navigation
+                fullChapter: chapter,
               });
             }
           });
 
-          // Format for SectionList
           const sections = Object.keys(groupedByColor).map(color => ({
             title: `${color.charAt(0).toUpperCase() + color.slice(1)} Highlights`,
             data: groupedByColor[color],
@@ -62,7 +59,6 @@ const LibraryScreen = ({ navigation }) => {
   );
 
   const handleVersePress = (item) => {
-    // Navigate to the 'Psalms' tab, then to the 'Verses' screen within that tab's stack
     navigation.navigate('Psalms', {
       screen: 'Verses',
       params: { chapter: item.fullChapter },
@@ -106,30 +102,33 @@ const LibraryScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#1C1C1C',
   },
   sectionHeader: {
     fontSize: 18,
     fontWeight: 'bold',
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#121212',
+    color: '#FFFFFF',
     paddingVertical: 8,
     paddingHorizontal: 16,
   },
   itemContainer: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#2C2C2C',
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: '#3C3C3C',
   },
   itemText: {
     fontSize: 16,
     fontStyle: 'italic',
     marginBottom: 8,
+    color: '#EAEAEA',
   },
   itemReference: {
     fontSize: 14,
     fontWeight: 'bold',
     textAlign: 'right',
+    color: '#A9A9A9',
   },
   emptyContainer: {
     flex: 1,
@@ -140,11 +139,11 @@ const styles = StyleSheet.create({
   emptyText: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#555',
+    color: '#FFFFFF',
   },
   emptySubText: {
     fontSize: 14,
-    color: '#777',
+    color: '#A9A9A9',
     textAlign: 'center',
     marginTop: 8,
   }

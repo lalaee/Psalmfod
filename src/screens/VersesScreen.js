@@ -12,6 +12,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Modal from 'react-native-modal';
 
 const HIGHLIGHT_COLORS = ['Red', 'Blue', 'Green', 'Yellow', 'Cyan', 'Orange'];
+const DARK_THEME = {
+  background: '#1C1C1C',
+  card: '#2C2C2C',
+  text: '#FFFFFF',
+};
 
 const VersesScreen = ({ route, navigation }) => {
   const { chapter } = route.params;
@@ -21,7 +26,6 @@ const VersesScreen = ({ route, navigation }) => {
 
   const getHighlightKey = (chapterNum, verseNum) => `psalm-${chapterNum}:${verseNum}`;
 
-  // Load highlights from AsyncStorage when the screen loads
   useEffect(() => {
     const loadHighlights = async () => {
       try {
@@ -40,7 +44,6 @@ const VersesScreen = ({ route, navigation }) => {
     loadHighlights();
   }, [chapter.chapter]);
 
-  // Set the navigation header title
   useLayoutEffect(() => {
     navigation.setOptions({
       title: `Psalm ${chapter.chapter}`,
@@ -61,7 +64,6 @@ const VersesScreen = ({ route, navigation }) => {
         await AsyncStorage.setItem(key, color);
         setHighlights(prev => ({ ...prev, [key]: color }));
       } else {
-        // Remove highlight
         await AsyncStorage.removeItem(key);
         setHighlights(prev => {
           const newHighlights = { ...prev };
@@ -79,7 +81,8 @@ const VersesScreen = ({ route, navigation }) => {
 
   const renderItem = ({ item }) => {
     const key = getHighlightKey(chapter.chapter, item.verse);
-    const backgroundColor = highlights[key] || '#ffffff';
+    // Use the highlight color or the dark theme card color as the background
+    const backgroundColor = highlights[key] || DARK_THEME.card;
 
     return (
       <TouchableOpacity onPress={() => handleVersePress(item)}>
@@ -99,9 +102,7 @@ const VersesScreen = ({ route, navigation }) => {
         data={chapter.verses}
         renderItem={renderItem}
         keyExtractor={(item) => item.verse.toString()}
-        contentContainerStyle={styles.list}
       />
-
       <Modal
         isVisible={isModalVisible}
         onBackdropPress={() => setModalVisible(false)}
@@ -129,22 +130,18 @@ const VersesScreen = ({ route, navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
-  list: {
-    paddingVertical: 8,
+    backgroundColor: DARK_THEME.background,
   },
   itemContainer: {
     padding: 16,
     marginVertical: 4,
     marginHorizontal: 16,
     borderRadius: 8,
-    borderWidth: 1,
-    borderColor: '#eee'
   },
   itemText: {
     fontSize: 17,
     lineHeight: 24,
+    color: DARK_THEME.text,
   },
   verseNumber: {
     fontWeight: 'bold',
@@ -154,7 +151,7 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   modalContent: {
-    backgroundColor: 'white',
+    backgroundColor: '#333333',
     padding: 22,
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
@@ -164,6 +161,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 12,
     textAlign: 'center',
+    color: DARK_THEME.text,
   },
   colorButton: {
     padding: 15,
@@ -178,7 +176,7 @@ const styles = StyleSheet.create({
   },
   separator: {
     height: 1,
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#555555',
     marginVertical: 10,
   },
 });

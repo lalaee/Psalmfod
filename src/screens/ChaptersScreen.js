@@ -5,7 +5,7 @@ import {
   View,
   FlatList,
   TouchableOpacity,
-  SafeAreaView
+  SafeAreaView,
 } from 'react-native';
 import psalmsData from '../data/psalms.json';
 
@@ -25,7 +25,6 @@ const ChaptersScreen = ({ navigation }) => {
         data={psalmsData}
         renderItem={renderItem}
         keyExtractor={(item) => item.chapter.toString()}
-        contentContainerStyle={styles.list}
       />
     </SafeAreaView>
   );
@@ -34,21 +33,18 @@ const ChaptersScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
-  list: {
-    paddingVertical: 8,
+    backgroundColor: '#1C1C1C',
   },
   itemContainer: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#2C2C2C',
     padding: 20,
     marginVertical: 4,
     marginHorizontal: 16,
     borderRadius: 8,
-    elevation: 1,
   },
   itemText: {
     fontSize: 18,
+    color: '#FFFFFF',
   },
 });
 

@@ -4,15 +4,28 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import ChaptersScreen from '../screens/ChaptersScreen';
 import VersesScreen from '../screens/VersesScreen';
-import LibraryScreen from '../screens/LibraryScreen'; // Import the new screen
+import LibraryScreen from '../screens/LibraryScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-// 1. Create a component for the original Stack navigation flow
+const darkThemeColors = {
+  header: '#121212',
+  background: '#1C1C1C',
+  card: '#2C2C2C',
+  text: '#FFFFFF',
+  inactive: 'gray',
+};
+
+// The Stack navigator for the "Psalms" tab
 const PsalmsStackNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: darkThemeColors.header },
+        headerTintColor: darkThemeColors.text,
+      }}
+    >
       <Stack.Screen
         name="Chapters"
         component={ChaptersScreen}
@@ -23,25 +36,32 @@ const PsalmsStackNavigator = () => {
   );
 };
 
-// 2. The main export is now the Tab Navigator
+// The main Tab Navigator
 const AppNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false, // Hide header here as the Stack has its own
+        headerShown: false,
+        tabBarActiveTintColor: darkThemeColors.text,
+        tabBarInactiveTintColor: darkThemeColors.inactive,
+        tabBarStyle: {
+          backgroundColor: darkThemeColors.header,
+          borderTopWidth: 0,
+        },
       }}
     >
       <Tab.Screen
         name="Psalms"
         component={PsalmsStackNavigator}
-        // You can add icons here, e.g., using options={{ tabBarIcon: ... }}
       />
       <Tab.Screen
         name="Library"
         component={LibraryScreen}
         options={{
-            headerShown: true, // Show a header for the Library screen
-            title: 'Highlight Library'
+          headerShown: true,
+          title: 'Highlight Library',
+          headerStyle: { backgroundColor: darkThemeColors.header },
+          headerTintColor: darkThemeColors.text,
         }}
       />
     </Tab.Navigator>
