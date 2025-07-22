@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Black-BF6576818b4c472.otf",
+      "sha1": "1cf19540f5f8521184e8e6f8f773b331381942b7"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf",
+      "sha1": "64c0d10d0ebbded70430ea3d25844622eb28effc"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Bold-BF6576818bd3700.otf",
+      "sha1": "c4d155097191cce8286cf664e36472e6a3e4a00b"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf",
+      "sha1": "2ca0d69852872ec1343808a31c07c1b48f4821d8"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Italic-BF6576818c041e2.otf",
+      "sha1": "32f2afd9f0085a46fce97a75f30a8ad6ce3ef400"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf",
+      "sha1": "52a1e2cb1ea9dc11ae42d2009c6792320cb957c0"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf",
+      "sha1": "937b58e601ecfccbeb68f118796f05786c3f4fd2"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf",
+      "sha1": "67e698aa94b811db67bb96ff0334d2b098ba5136"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf",
+      "sha1": "f5274a09ce6dd4e121ff6026ab5a60f009fafc9b"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Regular-BF6576818c3af74.otf",
+      "sha1": "57668859ff243f294244ce16f821581a45ad8701"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf",
+      "sha1": "f241addea02f93385fbb1c6d94cd953b23dd9b08"
+    },
+    {
+      "path": "src/assets/fonts/FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf",
+      "sha1": "0ac4007229ba3019900ac775af8737bc0271c2dc"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import {
   StyleSheet,
   Text,
   View,
-  SectionList,
+  FlatList,
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
@@ -12,8 +12,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import psalmsData from '../data/psalms.json';
 
 const LibraryScreen = ({ navigation }) => {
-  const [highlightedSections, setHighlightedSections] = useState([]);
+  const [groupedHighlights, setGroupedHighlights] = useState({});
+  const [selectedColor, setSelectedColor] = useState(null);
 
+  // useFocusEffect runs every time the user focuses on this screen
   useFocusEffect(
     useCallback(() => {
       const loadHighlights = async () => {
@@ -24,6 +26,7 @@ const LibraryScreen = ({ navigation }) => {
 
           const groupedByColor = {};
 
+          // Process and group highlights by color
           storedHighlights.forEach(([key, color]) => {
             const [chapterNum, verseNum] = key.replace('psalm-', '').split(':').map(Number);
             
@@ -38,17 +41,21 @@ const LibraryScreen = ({ navigation }) => {
                 ...verse,
                 chapter: chapterNum,
                 color: color,
-                fullChapter: chapter,
+                fullChapter: chapter, // Pass the full chapter object for navigation
               });
             }
           });
+          
+          setGroupedHighlights(groupedByColor);
+          
+          // Set the first available color as the default selection
+          const firstColor = Object.keys(groupedByColor)[0];
+          if(firstColor) {
+            setSelectedColor(firstColor);
+          } else {
+            setSelectedColor(null);
+          }
 
-          const sections = Object.keys(groupedByColor).map(color => ({
-            title: `${color.charAt(0).toUpperCase() + color.slice(1)} Highlights`,
-            data: groupedByColor[color],
-          }));
-
-          setHighlightedSections(sections);
         } catch (e) {
           console.error("Failed to load highlights for library.", e);
         }
@@ -65,7 +72,20 @@ const LibraryScreen = ({ navigation }) => {
     });
   };
 
-  const renderItem = ({ item }) => (
+  const renderColorPill = ({ item }) => {
+    const isActive = item === selectedColor;
+    return (
+      <TouchableOpacity onPress={() => setSelectedColor(item)}>
+        <View style={[styles.pillContainer, isActive && styles.activePillContainer]}>
+            <Text style={[styles.pillText, isActive && styles.activePillText]}>
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+            </Text>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+  
+  const renderVerseItem = ({ item }) => (
     <TouchableOpacity onPress={() => handleVersePress(item)}>
       <View style={styles.itemContainer}>
         <Text style={styles.itemText}>"{item.text}"</Text>
@@ -76,19 +96,29 @@ const LibraryScreen = ({ navigation }) => {
     </TouchableOpacity>
   );
 
-  const renderSectionHeader = ({ section: { title } }) => (
-    <Text style={styles.sectionHeader}>{title}</Text>
-  );
+  const availableColors = Object.keys(groupedHighlights);
 
   return (
     <SafeAreaView style={styles.container}>
-      {highlightedSections.length > 0 ? (
-        <SectionList
-          sections={highlightedSections}
-          keyExtractor={(item, index) => `${item.chapter}:${item.verse}:${index}`}
-          renderItem={renderItem}
-          renderSectionHeader={renderSectionHeader}
-        />
+      {availableColors.length > 0 ? (
+        <>
+          <View>
+            <FlatList
+              data={availableColors}
+              renderItem={renderColorPill}
+              keyExtractor={(item) => item}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.pillsListContainer}
+            />
+          </View>
+          <FlatList
+            data={groupedHighlights[selectedColor] || []}
+            renderItem={renderVerseItem}
+            keyExtractor={(item, index) => `${item.chapter}:${item.verse}:${index}`}
+            contentContainerStyle={styles.verseListContainer}
+           />
+        </>
       ) : (
         <View style={styles.emptyContainer}>
             <Text style={styles.emptyText}>No highlights yet.</Text>
@@ -104,19 +134,36 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1C1C1C',
   },
-  sectionHeader: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    backgroundColor: '#121212',
-    color: '#FFFFFF',
+  pillsListContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  pillContainer: {
     paddingVertical: 8,
     paddingHorizontal: 16,
+    borderRadius: 20,
+    marginRight: 10,
+    backgroundColor: '#2C2C2C',
+  },
+  activePillContainer: {
+    backgroundColor: '#EAEAEA',
+  },
+  pillText: {
+    color: '#EAEAEA',
+    fontWeight: 'bold',
+  },
+  activePillText: {
+    color: '#121212',
+  },
+  verseListContainer: {
+    paddingBottom: 20,
   },
   itemContainer: {
     backgroundColor: '#2C2C2C',
     padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: '#3C3C3C',
+    marginHorizontal: 16,
+    marginBottom: 10,
+    borderRadius: 8,
   },
   itemText: {
     fontSize: 16,

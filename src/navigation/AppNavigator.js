@@ -29,7 +29,19 @@ const PsalmsStackNavigator = () => {
       <Stack.Screen
         name="Chapters"
         component={ChaptersScreen}
-        options={{ title: 'Book of Psalms' }}
+        options={{
+          title: 'Book of Psalms',
+          headerStyle: {
+            backgroundColor: '#181919', // New background color
+            shadowOpacity: 0, // for iOS
+            elevation: 0, // for Android
+          },
+          headerTitleStyle: {
+            fontFamily: 'FKGroteskNeueTrial-Regular', // Custom font
+            fontSize: 22, // Larger font size
+          },
+          // headerTintColor: '#FFFFFF' // This ensures back button is white
+        }}
       />
       <Stack.Screen name="Verses" component={VersesScreen} />
     </Stack.Navigator>

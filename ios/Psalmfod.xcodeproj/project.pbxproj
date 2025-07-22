@@ -8,22 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-Psalmfod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Psalmfod.a */; };
+		0D10FD1EC56241A19775003F /* FKGroteskNeueTrial-Bold-BF6576818bd3700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08C4773D4BA84FC68E7E415D /* FKGroteskNeueTrial-Bold-BF6576818bd3700.otf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		45E8A5E14CAF49DF906A2442 /* FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE715B902614483A7DE475F /* FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf */; };
+		48CA8F20560C4DFCB16DDB43 /* FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf in Resources */ = {isa = PBXBuildFile; fileRef = 543DC6306C5B4C4DB5B93653 /* FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf */; };
+		5B27BA61A6B24A19B714794B /* FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf in Resources */ = {isa = PBXBuildFile; fileRef = CFADA5A33A454B2B87B8F686 /* FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8A9F72047B944714928A5CE9 /* FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB78FE2B640F49969BF88FF7 /* FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf */; };
+		8DCD273DF6044CE1BBC56279 /* FKGroteskNeueTrial-Black-BF6576818b4c472.otf in Resources */ = {isa = PBXBuildFile; fileRef = 314D9AACCA6B48229BD4C2F7 /* FKGroteskNeueTrial-Black-BF6576818b4c472.otf */; };
+		9B7221A57300412482B116C2 /* FKGroteskNeueTrial-Italic-BF6576818c041e2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88482520FF774A27807E60EE /* FKGroteskNeueTrial-Italic-BF6576818c041e2.otf */; };
+		B1B0A65BE2CB4EAABE9740A3 /* FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD209ABD48C4A65B7406BD7 /* FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf */; };
+		BC221E492E20681B00AF4EC2 /* psalms logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC221E482E20681B00AF4EC2 /* psalms logo.png */; };
+		BC221E502E20EB1600AF4EC2 /* psalmfod splash bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC221E4F2E20EB1600AF4EC2 /* psalmfod splash bg5.png */; };
+		D99259EDD01C487FBFB1D157 /* FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10610CE4A80F4266B13742A5 /* FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf */; };
+		E8B69C8AFD474F329493842E /* FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5116ACBCF214D4FB62FB0B5 /* FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf */; };
+		F92BE83F1A7B42C083EBAF2D /* FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42B08B1744754F888B8BFB7F /* FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf */; };
 		FB78082D5DBE405C465A337C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		FF7DEA12C4F94197AF6D809E /* FKGroteskNeueTrial-Regular-BF6576818c3af74.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE7A53A4379B40DC8200A8AF /* FKGroteskNeueTrial-Regular-BF6576818c3af74.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C4773D4BA84FC68E7E415D /* FKGroteskNeueTrial-Bold-BF6576818bd3700.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Bold-BF6576818bd3700.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Bold-BF6576818bd3700.otf"; sourceTree = "<group>"; };
+		10610CE4A80F4266B13742A5 /* FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Psalmfod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psalmfod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Psalmfod/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Psalmfod/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Psalmfod/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2CE715B902614483A7DE475F /* FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf"; sourceTree = "<group>"; };
+		314D9AACCA6B48229BD4C2F7 /* FKGroteskNeueTrial-Black-BF6576818b4c472.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Black-BF6576818b4c472.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Black-BF6576818b4c472.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Psalmfod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psalmfod.debug.xcconfig"; path = "Target Support Files/Pods-Psalmfod/Pods-Psalmfod.debug.xcconfig"; sourceTree = "<group>"; };
+		42B08B1744754F888B8BFB7F /* FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf"; sourceTree = "<group>"; };
+		543DC6306C5B4C4DB5B93653 /* FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Psalmfod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psalmfod.release.xcconfig"; path = "Target Support Files/Pods-Psalmfod/Pods-Psalmfod.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Psalmfod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Psalmfod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Psalmfod/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Psalmfod/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88482520FF774A27807E60EE /* FKGroteskNeueTrial-Italic-BF6576818c041e2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Italic-BF6576818c041e2.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Italic-BF6576818c041e2.otf"; sourceTree = "<group>"; };
+		BBD209ABD48C4A65B7406BD7 /* FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf"; sourceTree = "<group>"; };
+		BC221E482E20681B00AF4EC2 /* psalms logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "psalms logo.png"; sourceTree = "<group>"; };
+		BC221E4E2E206AA600AF4EC2 /* Psalmfod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Psalmfod-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC221E4F2E20EB1600AF4EC2 /* psalmfod splash bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "psalmfod splash bg5.png"; sourceTree = "<group>"; };
+		CFADA5A33A454B2B87B8F686 /* FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf"; sourceTree = "<group>"; };
+		DE7A53A4379B40DC8200A8AF /* FKGroteskNeueTrial-Regular-BF6576818c3af74.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Regular-BF6576818c3af74.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Regular-BF6576818c3af74.otf"; sourceTree = "<group>"; };
+		E5116ACBCF214D4FB62FB0B5 /* FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf"; sourceTree = "<group>"; };
+		EB78FE2B640F49969BF88FF7 /* FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf"; path = "../src/assets/fonts/FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -47,6 +76,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				BC221E4E2E206AA600AF4EC2 /* Psalmfod-Bridging-Header.h */,
 			);
 			name = Psalmfod;
 			sourceTree = "<group>";
@@ -70,11 +100,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BC221E4F2E20EB1600AF4EC2 /* psalmfod splash bg5.png */,
+				BC221E482E20681B00AF4EC2 /* psalms logo.png */,
 				13B07FAE1A68108700A75B9A /* Psalmfod */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C3A45B4CCC6D4A6DB88CB2F9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -96,6 +129,26 @@
 				5709B34CF0A7D63546082F79 /* Pods-Psalmfod.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3A45B4CCC6D4A6DB88CB2F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				314D9AACCA6B48229BD4C2F7 /* FKGroteskNeueTrial-Black-BF6576818b4c472.otf */,
+				CFADA5A33A454B2B87B8F686 /* FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf */,
+				08C4773D4BA84FC68E7E415D /* FKGroteskNeueTrial-Bold-BF6576818bd3700.otf */,
+				42B08B1744754F888B8BFB7F /* FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf */,
+				88482520FF774A27807E60EE /* FKGroteskNeueTrial-Italic-BF6576818c041e2.otf */,
+				EB78FE2B640F49969BF88FF7 /* FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf */,
+				BBD209ABD48C4A65B7406BD7 /* FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf */,
+				543DC6306C5B4C4DB5B93653 /* FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf */,
+				10610CE4A80F4266B13742A5 /* FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf */,
+				DE7A53A4379B40DC8200A8AF /* FKGroteskNeueTrial-Regular-BF6576818c3af74.otf */,
+				2CE715B902614483A7DE475F /* FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf */,
+				E5116ACBCF214D4FB62FB0B5 /* FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +211,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC221E502E20EB1600AF4EC2 /* psalmfod splash bg5.png in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				BC221E492E20681B00AF4EC2 /* psalms logo.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				FB78082D5DBE405C465A337C /* PrivacyInfo.xcprivacy in Resources */,
+				8DCD273DF6044CE1BBC56279 /* FKGroteskNeueTrial-Black-BF6576818b4c472.otf in Resources */,
+				5B27BA61A6B24A19B714794B /* FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf in Resources */,
+				0D10FD1EC56241A19775003F /* FKGroteskNeueTrial-Bold-BF6576818bd3700.otf in Resources */,
+				F92BE83F1A7B42C083EBAF2D /* FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf in Resources */,
+				9B7221A57300412482B116C2 /* FKGroteskNeueTrial-Italic-BF6576818c041e2.otf in Resources */,
+				8A9F72047B944714928A5CE9 /* FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf in Resources */,
+				B1B0A65BE2CB4EAABE9740A3 /* FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf in Resources */,
+				48CA8F20560C4DFCB16DDB43 /* FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf in Resources */,
+				D99259EDD01C487FBFB1D157 /* FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf in Resources */,
+				FF7DEA12C4F94197AF6D809E /* FKGroteskNeueTrial-Regular-BF6576818c3af74.otf in Resources */,
+				45E8A5E14CAF49DF906A2442 /* FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf in Resources */,
+				E8B69C8AFD474F329493842E /* FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Psalmfod;
+				SWIFT_OBJC_BRIDGING_HEADER = "Psalmfod-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -304,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Psalmfod;
+				SWIFT_OBJC_BRIDGING_HEADER = "Psalmfod-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

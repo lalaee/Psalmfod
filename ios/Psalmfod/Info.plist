@@ -32,7 +32,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -49,5 +49,20 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FKGroteskNeueTrial-Black-BF6576818b4c472.otf</string>
+		<string>FKGroteskNeueTrial-BlackItalic-BF6576818becb0d.otf</string>
+		<string>FKGroteskNeueTrial-Bold-BF6576818bd3700.otf</string>
+		<string>FKGroteskNeueTrial-BoldItalic-BF6576818c39d11.otf</string>
+		<string>FKGroteskNeueTrial-Italic-BF6576818c041e2.otf</string>
+		<string>FKGroteskNeueTrial-Light-BF6576818c0f3e8.otf</string>
+		<string>FKGroteskNeueTrial-LightItalic-BF6576818c3183c.otf</string>
+		<string>FKGroteskNeueTrial-Medium-BF6576818c3a00a.otf</string>
+		<string>FKGroteskNeueTrial-MediumItalic-BF6576818c2aaf8.otf</string>
+		<string>FKGroteskNeueTrial-Regular-BF6576818c3af74.otf</string>
+		<string>FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf</string>
+		<string>FKGroteskNeueTrial-ThinItalic-BF6576818c5cbd8.otf</string>
+	</array>
 </dict>
 </plist>

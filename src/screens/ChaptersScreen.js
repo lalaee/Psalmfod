@@ -33,18 +33,21 @@ const ChaptersScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1C1C1C',
+    backgroundColor: '#181919',
+    paddingTop: 20, // Add some padding at the top
   },
   itemContainer: {
-    backgroundColor: '#2C2C2C',
+    backgroundColor: '#1C1E1E',
     padding: 20,
     marginVertical: 4,
     marginHorizontal: 16,
     borderRadius: 8,
+    borderColor: '#292B2B',
   },
   itemText: {
+    fontFamily: 'FKGroteskNeueTrial-Regular', // Use the exact PostScript name
     fontSize: 18,
-    color: '#FFFFFF',
+    color: '#E5E5E2',
   },
 });
 
